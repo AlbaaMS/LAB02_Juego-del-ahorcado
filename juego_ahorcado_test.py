@@ -20,8 +20,14 @@ def test_ha_ganado():
     assert ha_ganado("______") == False
 
 
-#test_normalizar()
-#test_enmascarar()
+test_normalizar()
+test_enmascarar()
 test_ha_ganado()
+
+print("✅ Todas las pruebas han pasado correctamente.")
+
+from juego_ahorcado import mostrar_estado
+def test_mostrar_estado():
+    assert mostrar_estado("p_th_n", ["a", "e", "i", "p", "t"], 5) == "Estado: p _ t h _ n"; "Letras usadas: 5"; "Intentos restantes: 5"
 
 print("✅ Todas las pruebas han pasado correctamente.")
