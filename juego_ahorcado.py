@@ -58,11 +58,10 @@ def pedir_letra(letras_usadas):
     """
     while True:
         letra = input("Introduce una letra: ").lower()
-
-        if len(letra) != 1 or not letra.isalpha():
-            print("Debes introducir una única letra del abecedario.")
-        elif letra in letras_usadas:
+        if letra in letras_usadas:
             print("Esa letra ya la has usado anteriormente.")
+        elif len(letra) != 1 or not letra.isalpha():
+            print("Debes introducir una única letra del abecedario.")
         else:
             return letra
 
